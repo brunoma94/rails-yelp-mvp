@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+puts "Seed initialization"
+Restaurant.destroy_all
+
+Restaurant.create!([
+ { name: 'Star Wars', address: 'Lord of the Rings', category: "chinese", phone_number: "682734684"},
+ { name: 'Star Wars', address: 'Lord of the Rings', category: "chinese", phone_number: "682734684"},
+ { name: 'Star Wars', address: 'Lord of the Rings', category: "chinese", phone_number: "682734684"},
+ { name: 'Star Wars', address: 'Lord of the Rings', category: "chinese", phone_number: "682734684"},
+ { name: 'Star Wars', address: 'Lord of the Rings', category: "chinese", phone_number: "682734684"}
+])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Finished"
